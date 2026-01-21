@@ -1,5 +1,8 @@
 from helper import *
+from fileop import *
 s=0
+data=read_expences()
+set_expences(data)
 while(s==0):
     print("=====Menu=====")
     print("1=> For Insert")
@@ -16,3 +19,6 @@ while(s==0):
     if(opt==4):
         update_expence()  
     s=int(input("Do you want to continue? press 0 For Yes"))
+    if(s!=0):
+        d1=get_expences()
+        write_expences(d1)

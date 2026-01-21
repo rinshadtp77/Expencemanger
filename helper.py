@@ -20,3 +20,8 @@ def update_expence():
     purpose=input("Enter Purpose")
     dt=input("Enter Date")
     expences[id]=(payee,amount,purpose,dt)
+def get_expences():
+    return expences
+def set_expences(t):
+    global expences
+    expences=t
